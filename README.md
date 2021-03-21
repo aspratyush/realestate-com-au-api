@@ -17,8 +17,8 @@ from realestate_com_au import RealestateComAu
 
 api = RealestateComAu()
 
-# Get property listings
-listings = api.search(locations=["seventeen seventy, qld 4677"], channel="buy")
+# Get property listings for Tuggeranong District, ACT
+listings = api.search(locations=["tuggeranong district, act"], channel="buy", min_bedrooms=3, max_bedrooms=4, property_types=['house'], min_bathrooms=2, min_land_size=400)
 ```
 
 ## Data classes
