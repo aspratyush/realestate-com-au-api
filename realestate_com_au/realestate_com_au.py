@@ -7,10 +7,10 @@ from time import sleep
 from urllib.parse import urlencode
 import json
 import re
-from fajita import Fajita
 
 import realestate_com_au.settings as settings
 from realestate_com_au.graphql import searchBuy, searchRent, searchSold
+from realestate_com_au.fajita.fajita import Fajita
 from realestate_com_au.objects.listing import get_listing
 
 logger = logging.getLogger(__name__)
